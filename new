@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	float subject_web,programming,network,database,data_modeling,design,aplus;
+	float total,avg;
+	
+	cout<<"Subject_web   :";cin>>subject_web;
+	cout<<"Programming   :";cin>>programming;
+	cout<<"Network       :";cin>>network;
+	cout<<"Database      :";cin>>database;
+	cout<<"Data_modeling :";cin>>data_modeling;
+	cout<<"Design        :";cin>>design;
+	cout<<"Aplus         :";cin>>aplus;
+	total=(subject_web+programming+network+database+data_modeling+design+aplus);
+	avg=total/7;
+	cout<<"The result is"<<avg<<endl;
+	
+	if(avg>=0 && avg<=49){
+		cout<<"The degree is F";
+	}
+	else if(avg>=50 && avg<=70){
+		cout<<"The degree is E";
+	}
+	else if(avg>=71 && avg<=85){
+		cout<<"The degree is D";
+	}
+	else if(avg>=86 && avg<=90){
+		cout<<"The degree is C";
+	}
+	else if(avg>=91 && avg<=96){
+		cout<<"The degree is B";
+	}
+	else {
+		cout<<"The degree is A";
+	}
+	
+}
